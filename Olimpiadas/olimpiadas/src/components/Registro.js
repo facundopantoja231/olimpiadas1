@@ -9,6 +9,8 @@ export default class Registro extends React.Component {
 
     render() {
 
+        
+
         const { titulo } = this.props;
 
         return(

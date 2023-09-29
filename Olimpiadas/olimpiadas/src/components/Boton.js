@@ -7,7 +7,6 @@ export default class Boton extends React.Component {
     }
 
     render() {
-
         const { titulo, image } = this.props;
 
         return(

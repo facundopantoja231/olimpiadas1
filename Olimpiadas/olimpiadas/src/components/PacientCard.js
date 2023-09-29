@@ -15,10 +15,11 @@ export default class CallCard extends React.Component {
     }
 
     render() {
+        const {datos} = this.props;
         return(
             <div className="CardTwo">
-                <img src={Profile}/>
-                <h2>Pacient Name</h2>
+                <images src={Profile}/>
+                <h2>{datos}</h2>
 
                 <div className="actions">
                     <Boton image={Edit}/>
