@@ -1,0 +1,344 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+/* Header Component */
+
+.Header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #42c2ed;
+    width: 100%;
+    padding: .75rem;
+}
+
+.Header img {
+    cursor: pointer;
+    width: 4.5%;
+    transition: .3s;
+}
+
+.Header img:hover {
+    transform: scale(1.1);
+}
+
+.headerButtons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Botoncito {
+    border: 1px solid #186A75;
+    background-color:#186A75;
+    padding: 1rem;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    height: 50px;
+    transition: background-color .3s;
+}
+
+.Botoncito:hover {
+    color: #eee;
+    background-color: #186A75;
+}
+
+/* Input component */
+
+.Input {
+    width: 125px;
+    height: 20px;
+    text-align: center;
+    border-radius: 30px;
+    outline: none;
+    border: 1px solid #42c2ed;
+    outline: 1px solid #42c2ed;
+    transition: .3s;
+}
+
+.Input:focus {
+    transform: scale(1.1);
+    border: 1px solid #37a4c9;
+    outline: 1px solid #37a4c9;
+}
+
+
+/* main Container */
+
+.mainContainer {
+    margin-block: 15px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    gap: 15px;
+}
+
+.Registro {
+    background-color: #42c2ed;
+    width: 55%;;
+}
+
+
+.regTitle h2, .listTitle h2 {
+    text-transform: uppercase;
+    color: white;
+    padding: 1rem;
+    font-size: 2rem;
+}
+
+.regCards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    padding-block: 1rem;
+}
+
+.Listado {
+    width: 40%;
+    background-color: #42c2ed;
+}
+
+
+.Card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    padding: 1rem;
+    height: 60px;
+    background-color: white;
+    gap: 10px;
+    border-radius: 50px;
+}
+
+.Card .Botoncito {
+    background-color: transparent;
+    border: transparent;
+}
+
+.Card .Botoncito img {
+    width: 20px;
+    transition: .3s;
+}
+
+.Card .Botoncito img:hover {
+    transform: scale(1.4);
+}
+
+.cardInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.Listado, .Registro {
+    border-radius: 30px;
+}
+
+
+/* Listado de Pacientes */
+
+.listCards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.CardTwo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 170px;
+    height: 170px;
+    background-color: #37a4c9;
+    box-shadow: 1px 1px 3px #000a, -1px -1px 3px #000a;
+    gap: 10px;
+}
+
+.CardTwo img {
+    width: 30%;
+}
+
+.actions {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.actions .Botoncito img {
+    width: 20px;
+    transition: all .3s;
+}
+
+.actions .Botoncito img:hover {
+    transform: scale(1.4);
+}
+
+.actions .Botoncito {
+    background-color: transparent;
+    border: transparent;
+}
+
+.formulario, .formulario2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2aaac9;
+    flex-direction: column;
+   width: 30%;
+   height: 70%;
+   gap: 10px;
+   border-radius: 5%;
+
+}
+
+/* .App {
+    background-color: transparent;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+} */
+
+.formulario .Input, .formulario2 .Input {
+  height: 10%;
+  width: 50%;
+}
+.formulario .Botoncito, .formulario2 .Botoncito, .valid .Botoncito, .emergencia .Botoncito{
+    border-radius: 15%;
+}
+.formulario h1, .formulario2 h1{
+    font-size: 20px;
+}
+
+.valid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2aaac9;
+    flex-direction: column;
+   width: 30%;
+   height: 50%;
+   gap: 40px;
+   border-radius: 5%;
+}
+
+.valid .Input{
+    width: 150px;
+    height: 50px;
+}
+
+.valid h1{
+    font-size: 25px;
+}
+
+.emergencia{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2aaac9;
+    flex-direction: column;
+   width: 30%;
+   height: 70%;
+   gap: 10px;
+   border-radius: 5%;
+}
+
+.emergencia h1{
+    font-size: 20px;
+}
+
+.emergencia .Input{
+    width: 150px;
+    height: 40px;
+}
+
+.Enfermeros {
+    background-color: #42c2ed;
+    width: 70%;;
+}
+
+.Estadisticas {
+    width: 25%;
+    background-color: #42c2ed;
+}
+
+.mainContainer2 {
+    margin-block: 15px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    gap: 15px;
+}
+
+.Estadisticas, .Enfermeros {
+    border-radius: 30px;
+}
+
+.actions2 {
+    flex-direction: row;
+    display: flex;
+}
+
+.regCards2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    padding-block: 1rem;
+}
+
+.actions2 .Botoncito img {
+    width: 20px;
+    transition: all .3s;
+}
+
+.actions2 .Botoncito img:hover {
+    transform: scale(1.4);
+}
+
+.actions2 .Botoncito {
+    background-color: transparent;
+    border: transparent;
+}
+
+.modal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.modal .contenido {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 15px;
+}
